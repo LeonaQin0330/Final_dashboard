@@ -110,5 +110,3 @@ Users can toggle the visibility of different BMI categories by clicking on the l
 ## Project Importance {.tabset}
 
 This dashboard explores the relationship between smoking status and diabetes prevalence among surgical patients, highlighting potential compounding risk factors. It also examines how preoperative hematocrit levels vary by BMI category, providing insights into anemia risk stratification before femur shaft fracture surgeries.
-
-[Click here to view the source code on GitHub](https://github.com/LeonaQin0330/Final_dashboard)
