@@ -5,6 +5,7 @@ output:
   flexdashboard::flex_dashboard:
     orientation: rows
     vertical_layout: scroll
+    self_contained: false
 ---
 
 ```{r setup, include=FALSE}
@@ -87,6 +88,7 @@ obese_plot <- plot_ly(obese_data, x = ~PRHCT, type = "histogram", name = "Obese"
 hct_subplot <- subplot(normal_weight_plot, overweight_plot, obese_plot, nrows = 1, shareX = TRUE, shareY = TRUE) %>%
   layout(
     title = "Preoperative Hematocrit (HCT) Distribution by BMI Category",
+    autosize = TRUE,
     showlegend = TRUE,
     legend = list(title = list(text = "BMI Category")),
     xaxis = list(domain = c(0, 0.33)),
@@ -108,3 +110,5 @@ Users can toggle the visibility of different BMI categories by clicking on the l
 ## Project Importance {.tabset}
 
 This dashboard explores the relationship between smoking status and diabetes prevalence among surgical patients, highlighting potential compounding risk factors. It also examines how preoperative hematocrit levels vary by BMI category, providing insights into anemia risk stratification before femur shaft fracture surgeries.
+
+[Click here to view the source code on GitHub](https://github.com/LeonaQin0330/Final_dashboard)
